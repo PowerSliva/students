@@ -33,3 +33,22 @@ function sortname(massname) {
 }
 sortname(massname) 
 // Я полагая ипользовать встроенные команды нельзя было)))
+
+/**3. Написать функцию, которая отфильтрует массив 
+[1,2,3,4,5,6,7,8,9,10,11,12,13,14] и оставит из него только те числа, 
+квадраты которых больше 20, но меньше 100
+*/
+let masszad3 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+
+function sortzad3(masszad3) {
+  for (let i=0; i<masszad3.length; i++){
+    if(masszad3[i]**2 > 20 && masszad3[i]**2 < 100) {
+    }
+    else {
+      masszad3.splice(i,1)
+      i--;
+          }
+      }
+    return console.log(masszad3);
+}
+sortzad3(masszad3)
